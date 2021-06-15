@@ -1,0 +1,34 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ts-node",
+      "type": "node",
+      "request": "launch",
+      "args": [
+        "${relativeFile}"
+      ],
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register"
+      ],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "调试TS代码",
+      "type": "node",
+      "request": "launch",
+      // ts-node 命令： “直接”运行ts代码。
+      // 作用：调试时加载ts-node包（在调试时“直接”运行ts代码）
+      "runtimeArgs": ["-r", "ts-node/register"],
+      // 此处的 a.ts 表示要调试的 TS 文件（ 可修改为其他要调试的ts文件 ）
+      //"args": ["${workspaceFolder}/a.ts"]
+      "program": "${file}"
+    }
+  ]
+}
