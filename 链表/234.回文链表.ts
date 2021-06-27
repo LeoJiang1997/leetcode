@@ -20,7 +20,7 @@
 //?双指针 递归法 栈 快慢指针
 //*另外由于链表不支持随机访问，因此如果想要获取数组中间项和倒数第几项等特定元素就需要一些特殊的手段，
 //*而这个手段就是快慢指针。比如要找链表中间项就搞两个指针，一个大步走（一次走两步），一个小步走（一次走一步），这样快指针走到头，慢指针刚好在中间。
-class ListNode {
+ class  ListNode2 {
   val: number
   next: ListNode | null
   constructor(val?: number, next?: ListNode | null) {
