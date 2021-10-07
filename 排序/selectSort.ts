@@ -3,6 +3,7 @@ function selectSort(array: number[]): number[] {
   let length = array.length;
   for (let i = 0; i < length - 1; i++) {
     let minPro = i;
+    // 把一个数组拆成两半，j为另一半，从里面寻找那个最小值放进已经排完的数组中
     for (let j = i + 1; j < length; j++) {
       minPro = array[minPro] < array[j] ? minPro : j;
     }

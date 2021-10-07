@@ -1,12 +1,12 @@
-function randArray(len, min, max) {
-  return Array.from({length:len}, v => Math.floor(Math.random()*(max-min))+min);
-}
+// function randArray(len, min, max) {
+//   return Array.from({length:len}, v => Math.floor(Math.random()*(max-min))+min);
+// }
 
-function swap(arr:number[],i:number,j:number){
-  let temp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = temp;
-}
+// function swap(arr:number[],i:number,j:number){
+//   let temp = arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = temp;
+// }
 
 class insertSort {
   arr: number[];
