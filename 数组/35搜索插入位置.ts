@@ -3,11 +3,10 @@ function searchInsert(nums: number[], target: number): number {
   while(left < right){
       //为了防止数字溢出，因为left和right肯定不超过整数最大值，但left+right就不一定了
       const middle = left + Math.floor((right - left)/2);
-      var mid = Math.floor((right - left)/2);
       if(nums[middle] > target){
           right = middle; //目标值在左边，往左边查找
       }else if(nums[middle] > target){
-          left = middle; //目标值在右边，往右边查找
+          left = middle+1; //目标值在右边，往右边查找
       } else if(nums[middle] === target){
           return middle;
       }
