@@ -17,7 +17,7 @@ function search(nums: number[], target: number): number {
 
 //TODO 对于寻找左右边界的二分搜索，常见的手法是使用左闭右开的「搜索区间」，我们还根据逻辑将「搜索区间」全都统一成了两端都闭，便于记忆，只要修改两处即可变化出三种写法：
 
-function leftBound(nums: number[], target: number) {
+function leftBound(nums: number[], target: number): number {
     let left = 0, right = nums.length - 1;
     while (left <= right) {
         let mid = (left + right) >> 1;
@@ -36,7 +36,7 @@ function leftBound(nums: number[], target: number) {
     return left;
 }
 
-function rightBound(nums: number[], target: number) {
+function rightBound(nums: number[], target: number): number {
     let left = 0, right = nums.length - 1;
     while (left <= right) {
         let mid = (left + right) >> 1;
