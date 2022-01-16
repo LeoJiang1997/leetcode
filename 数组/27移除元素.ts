@@ -17,28 +17,28 @@ function removeElement(nums: number[], val: number): number {
 
     /** 法二 */
     //双指针
-    const n = nums.length;
-    let left = 0;
-    for (let right = 0; right < n; right++) {
-        if (nums[right] !== val) {
-            nums[left] = nums[right];
-            left++;
-        }
-    }
-    return left;
+    // const n = nums.length;
+    // let left = 0;
+    // for (let right = 0; right < n; right++) {
+    //     if (nums[right] !== val) {
+    //         nums[left] = nums[right];
+    //         left++;
+    //     }
+    // }
+    // return left;
 
     /** 法三 */
     /** 覆盖法 */
     // 太牛了，for of遍历数组，假如不是等于val的值就用该值把前面的值覆盖掉
     // 其实也相当于双指针，法二的优化，ans为慢指针，forof为快指针
-    // let ans = 0;
-    // for(const num of nums) {
-    //     if(num != val) {
-    //         nums[ans] = num;
-    //         ans++;
-    //     }
-    // }
-    // return ans;
+    let ans = 0;
+    for(const num of nums) {
+        if(num != val) {
+            nums[ans] = num;
+            ans++;
+        }
+    }
+    return ans;
   };
 
-console.log(removeElement([3,2,2,3],3));
+console.log(removeElement([0,1,2,2,3,0,4,2],3));
