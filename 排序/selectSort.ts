@@ -15,5 +15,4 @@ function selectSort(array: number[]): number[] {
   return array;
 }
 
-
 console.log(selectSort(arr));
