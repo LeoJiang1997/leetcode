@@ -31,6 +31,7 @@ function reverseList(head: ListNode | null): ListNode | null {
    while(cur){
      const next = cur.next;
      cur.next = pre;
+     //前节点和现节点都往下一个节点继续反转
      pre = cur;
      cur = next;
    }

@@ -1,5 +1,8 @@
 // function randArray(len, min, max) {
 //   return Array.from({length:len}, v => Math.floor(Math.random()*(max-min))+min);
+
+import { randArray } from '../utils/arrRandom';
+
 // }
   let arrBubble: number[];
   // 冒泡排序，谁大谁交换（冒泡）
