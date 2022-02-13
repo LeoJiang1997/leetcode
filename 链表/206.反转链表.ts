@@ -41,11 +41,3 @@ function reverseList(head: ListNode | null): ListNode | null {
 
 // console.log(reverseList({val:1  , next: {val: 2, next: {val: 3, next:null}}}))
 // console.log(typeof["a"]);
-
-const p = new Promise((resolve,reject) => {
-  resolve("chenggong")
-});
-p.then();
-console.log(p);
-// @lc code=end
-
